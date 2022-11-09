@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var User_1 = require("./User");
+var userMangager_1 = require("./userMangager");
+var user = new User_1.User('Nguyen Van A', 'nguyenvana@gmail.com', 1);
+var user1 = new User_1.User('Nguyen Van b', 'nguyenvanb@gmail.com', 2);
+var user2 = new User_1.User('Nguyen Van c', 'nguyenvanc@gmail.com', 2);
+var userManager = new userMangager_1.UserManager();
+userManager.GetAll = user;
+userManager.GetAll = user1;
+userManager.GetAll = user2;
+console.log(userManager.getInfo);
