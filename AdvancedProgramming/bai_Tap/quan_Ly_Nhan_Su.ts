@@ -7,13 +7,14 @@ class Employee {
     private static _employee = [];
 
 
-    constructor(lastname: string, name: string, birthday: number, address: string, jobPosition: string) {
+    constructor( lastname: string, name: string, birthday: number, address: string, jobPosition: string) {
         this._lastname = lastname;
         this._name = name;
         this._birthday = birthday;
         this._address = address;
         this._jobPosition = jobPosition;
     }
+
 
     getLastname(): string {
 
@@ -112,7 +113,7 @@ Employee.setInfo(Employee);
 
 Employee.edit(employee2, employee3);
 
-Employee.delete(employee1);
+Employee.delete(Employee);
 
 console.log(Employee.display());
 
